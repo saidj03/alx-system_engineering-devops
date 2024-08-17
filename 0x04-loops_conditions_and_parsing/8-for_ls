@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Uses for loop to list the contents of the current directory,
+# only the part of the name after the first dash is displayed
+for contents in *; do (echo "$contents" | rev | cut -d '-' -f -1 | rev); done
